@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Power BI Dashboard</title>
+  <script>
+    // Simple password protection
+    const password = prompt("Enter the password:");
+    if (password !== "RefereeReport2425") {
+      document.body.innerHTML = "Access Denied";
+      throw new Error("Incorrect password");
+    }
+  </script>
+</head>
+<body>
+  <iframe 
+    width="100%" 
+    height="800" 
+    src="https://app.powerbi.com/reportEmbed?reportId=98e9c7d2-78bd-4b67-ada1-77bc7d4abe80&autoAuth=true&ctid=9b201e6d-5e35-4bd4-ad79-e2b4a6be5939" 
+    frameborder="0" 
+    allowFullScreen="true">
+  </iframe>
+</body>
+</html>
